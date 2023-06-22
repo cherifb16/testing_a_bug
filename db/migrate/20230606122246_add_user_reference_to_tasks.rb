@@ -1,4 +1,4 @@
-class AddReferenceToTasks < ActiveRecord::Migration[6.0]
+class AddUserReferenceToTasks < ActiveRecord::Migration[6.0]
   def change
     add_reference :tasks, :user, foreign_key: true
   end

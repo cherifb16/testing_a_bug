@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :task do
     user
-    title { 'Test1' }
+    titre { 'Test1' }
     content { 'Test est ok' }
     deadline_on { Date.today.since(2.day) }
     priority { 'middle' }
@@ -10,8 +10,8 @@ FactoryBot.define do
 
   factory :second_task, class: Task do
     user
-    title { 'Test2' }
-    content { 'Test2 est ok' }
+    titre { 'Test2' } 
+    content { 'Content2 est ok' }
     deadline_on { Date.today.since(1.day) }
     priority { 'high' }
     status { 'doing' }
@@ -19,7 +19,7 @@ FactoryBot.define do
 
   factory :third_task, class: Task do
     user
-    title { 'Test3' } 
+    titre { 'Test3' } 
     content { 'Content3 est ok' }
     deadline_on { Date.today }
     priority { 'low' }
